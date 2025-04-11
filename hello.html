@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deviprasad's Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #0d0d0d;
+      color: #ffffff;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li a {
+      color: #00ffc8;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ff4081;
+    }
+
+    .profile-pic {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid #00ffc8;
+    }
+
+    .profile-pic img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    #hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(to right, #1a1a1a, #262626);
+    }
+
+    h1, h2 {
+      color: #00ffc8;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .project, .certificate {
+      background-color: #1f1f1f;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 8px rgba(0, 255, 200, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .project:hover, .certificate:hover {
+      transform: scale(1.02);
+    }
+
+    a {
+      color: #00ffc8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #ff4081;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#certifications">Certificates</a></li>
+        <li><a href="https://www.linkedin.com/in/deviprasadlutta" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/deviprasadlutta" target="_blank">GitHub</a></li>
+        <li><a href="Deviprasad-Resume.pdf" target="_blank">Resume</a></li>
+      </ul>
+    </nav>
+    <div class="profile-pic">
+      <img src="deviprasad1.png" alt="Deviprasad's photo" />
+    </div>
+  </header>
+
+  <section id="hero">
+    <h1>Hello, I'm Deviprasad</h1>
+    <p>An engineering student passionate about cybersecurity. I build projects, participate in events, and explore real-world security vulnerabilities.</p>
+    <button onclick="scrollToPortfolio()">View My Work</button>
+  </section>
+
+  <section id="portfolio">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>John-The-Ripper Project</h3>
+      <p>Hands-on project using John the Ripper for password cracking.</p>
+      <p><strong>Tools Used:</strong> Kali Linux, John the Ripper, Zip2John</p>
+      <p><strong>Commands:</strong> John prasad.txt, Zip2John prasad.zip &gt; prasad.txt</p>
+      <p><strong>Result:</strong> Cracked password: devi112233</p>
+      <a href="https://github.com/deviprasadlutta/Cybersecurity-Projects/blob/main/johnripper.pdf" target="_blank">View</a>
+    </div>
+
+    <div class="project">
+      <h3>Wireshark Network Analysis</h3>
+      <p>Analyzing network traffic using Wireshark in a virtual setup.</p>
+      <p><strong>Tools:</strong> Wireshark, Hostapd</p>
+      <p><strong>Objective:</strong> Identify HTTP, DNS, TCP traffic anomalies</p>
+      <a href="https://github.com/deviprasadlutta/Cybersecurity-Projects/blob/main/wireshark%20analysis%20project.pdf" target="_blank">View</a>
+    </div>
+
+    <div class="project">
+      <h3>Nmap Scan Results</h3>
+      <p>Scan and analysis of my phone's IP address using Nmap.</p>
+      <a href="https://github.com/deviprasadlutta/Cybersecurity-Projects/blob/main/nmap.png" target="_blank">View</a>
+    </div>
+
+    <div class="project">
+      <h3>QR Code-Based Phishing Simulation</h3>
+      <p>Simulated phishing attack using QR and local hosting with Zphisher.</p>
+      <p><strong>Tools:</strong> Kali Linux, Zphisher, Qrencode</p>
+      <p><strong>Result:</strong> Fake Instagram login hosted locally with credential capture</p>
+      <a href="https://github.com/deviprasadlutta/Cybersecurity-Projects/blob/main/Phishing.pdf" target="_blank">View</a>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+
+    <div class="certificate">
+      <h3>Introduction to Cybersecurity</h3>
+      <a href="https://drive.google.com/file/d/1fCdm4z2TpEoR-j49BKee4rsvLeMnoz2x/view?usp=drive_link" target="_blank">View</a>
+    </div>
+
+    <div class="certificate">
+      <h3>Shields Up: Cybersecurity Job Simulation</h3>
+      <a href="https://lnkd.in/dp8S6Mta" target="_blank">View</a>
+    </div>
+
+    <div class="certificate">
+      <h3>Certificate of Excellence in - Software and Hardware Security</h3>
+      <a href="https://drive.google.com/file/d/13cHE19JYFSH_AwL8wfO5J0F5m69jfC5U/view?usp=drive_link" target="_blank">View</a>
+    </div>
+    <div class="certificate">
+        <h3>Connect and protect: Network and Network Security</h3>
+        <a href="https://www.coursera.org/account/accomplishments/records/2LLU703RK4C7" target="_blank">View</a>
+      </div>
+      <div class="certificate">
+        <h3>Tools of the Trade: Linux and QL</h3>
+        <a href="https://www.coursera.org/account/accomplishments/records/D0E63G94CBJH" target="_blank">View</a>
+      </div>
+      <div class="certificate">
+        <h3>ISC@ Candidate Certificate</h3>
+        <a href="https://www.credly.com/badges/629eb57c-71c3-49e5-a3f2-56fb4d78daaa/linked_in_profile" target="_blank">View</a>
+      </div>
+      <div class="certificate">
+        <h3>Mastercard-Cybersecurity Job Simulation</h3>
+        <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/mfxGwGDp6WkQmtmTf/vcKAB5yYAgvemepGQ_mfxGwGDp6WkQmtmTf_X7pirsqYvnjBQNpZS_1734935052248_completion_certificate.pdf" target="_blank">View</a>
+      </div>
+      <div class="certificate">
+        <h3>Cybersecurity and Privacy</h3>
+        
+        <a href="https://drive.google.com/file/d/177jfJUheo1a4C3fP9Ytz1-QTbOxHdaNi/view?usp=drive_link" target="_blank">View</a>
+      </div>
+      <div class="certificate">
+        <h3>Tata Group-Cybersecurity Analyst Job Simulation</h3>
+        <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Tata/gmf3ypEXBj2wvfQWC_ifobHAoMjQs9s6bKS_X7pirsqYvnjBQNpZS_1730201478930_completion_certificate.pdf" target="_blank">View</a>
+      </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Deviprasad. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function scrollToPortfolio() {
+      document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
